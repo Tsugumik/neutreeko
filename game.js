@@ -6,6 +6,7 @@ const alertHTML = `<span class="closebtn" onclick="this.parentElement.style.disp
 let round = 0;
 const playersColors = ["yellow", "red"];
 let players = []
+let dragged;
 let activePlayer = playersColors[0];
 const winAlert = (who, roundN) => {
     document.querySelector(".alert").innerHTML += `${who} won in ${roundN} moves`;
@@ -386,7 +387,7 @@ const initGame = () => {
 
     document.addEventListener("dragstart", (event) => {
         // store a ref. on the dragged elem
-        let dragged = event.target;
+        dragged = event.target;
 	if(dragged.getAttribute("draggable")=="false"){
 		return;
 	}
