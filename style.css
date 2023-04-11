@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . .";
+    width: 50rem;
+    height: 50rem;
+}
+
+.fieldN {
+    width: 50rem;
+    margin-top: 0.5rem;
+    display: flex;
+    margin-left: 1rem;
+}
+
+.fieldN div {
+    width: 10rem;
+}
+
+.nContainer {
+    display: flex;
+}
+
+.field {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldNN div {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.fieldNN {
+    margin-right: 0.5rem;
+}
+
+.blackField {
+    background: black;
+}
+
+.whiteField {
+    background: white;
+}
+
+.player {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: solid black 1px;
+}
+
+.yellowPlayer {
+    background: yellow;
+}
+
+.redPlayer {
+    background: red;
+}
+
+#winBox {
+    height: 10rem;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(117, 114, 114);
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+
+#victoriousPlayer {
+    color: yellow;
+    font-size: 3rem;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    /* Red */
+    color: white;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    opacity: 1;
+    transition: opacity 0.6s;
+    display: none;
+}
+
+
+/* The close button */
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+#reset {
+    font-size: 2rem;
+    cursor: pointer;
+}

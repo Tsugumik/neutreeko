@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutreeko</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+        a5 b5 c5 d5 e5
+        a4 b4 c4 d4 e4
+        a3 b3 c3 d3 e3
+        a2 b2 c2 d2 e2
+        a1 b1 c1 d1 e1
+
+        51 52 53 54 55
+        41 42 43 44 45
+        31 32 33 34 35
+        21 22 23 24 25
+        11 12 13 14 15
+
+        15 25 35 45 55
+        14 24 34 44 54
+        13 23 33 43 53
+        12 22 32 42 52
+        11 21 31 41 51
+    -->
+    <div class="infoArea">
+        <h1 id="round"></h1>
+        <span id="reset" onclick="createPlayers();">Reset</span></div>
+    <div class="nContainer">
+        <div class="fieldNN">
+            <div>5</div>
+            <div>4</div>
+            <div>3</div>
+            <div>2</div>
+            <div>1</div>
+        </div>
+
+        <div class="container">
+            <div id="f15" class="field whiteField"></div>
+            <div id="f25" class="field blackField"></div>
+            <div id="f35" class="field whiteField"></div>
+            <div id="f45" class="field blackField"></div>
+            <div id="f55" class="field whiteField"></div>
+
+            <div id="f14" class="field blackField"></div>
+            <div id="f24" class="field whiteField"></div>
+            <div id="f34" class="field blackField"></div>
+            <div id="f44" class="field whiteField"></div>
+            <div id="f54" class="field blackField"></div>
+
+            <div id="f13" class="field whiteField"></div>
+            <div id="f23" class="field blackField"></div>
+            <div id="f33" class="field whiteField"></div>
+            <div id="f43" class="field blackField"></div>
+            <div id="f53" class="field whiteField"></div>
+
+            <div id="f12" class="field blackField"></div>
+            <div id="f22" class="field whiteField"></div>
+            <div id="f32" class="field blackField"></div>
+            <div id="f42" class="field whiteField"></div>
+            <div id="f52" class="field blackField"></div>
+
+            <div id="f11" class="field whiteField"></div>
+            <div id="f21" class="field blackField"></div>
+            <div id="f31" class="field whiteField"></div>
+            <div id="f41" class="field blackField"></div>
+            <div id="f51" class="field whiteField"></div>
+        </div>
+    </div>
+
+    <div class="fieldN">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>
+    <script type="module" src="./game.js"></script>
+</body>
+
+</html>
