@@ -386,7 +386,7 @@ const initGame = () => {
 
     document.addEventListener("dragstart", (event) => {
         // store a ref. on the dragged elem
-        dragged = event.target;
+        let dragged = event.target;
 	if(dragged.getAttribute("draggable")=="false"){
 		return;
 	}
