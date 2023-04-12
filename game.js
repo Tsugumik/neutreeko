@@ -2,6 +2,7 @@
     Błażej Drozd - 10/2021
     MIT License
 */
+
 const alertHTML = `<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>`;
 let round = 0;
 const playersColors = ["yellow", "red"];
@@ -470,4 +471,9 @@ const createPlayers = () => {
     });
     nextRound();
 }
+
 initGame();
+
+document.querySelector("#reset").addEventListener("click", ()=>{
+    createPlayers();
+});
